@@ -1,0 +1,4 @@
+Fecha: 2026-11-24T04:17:54Z
+Suscripción: Azure for Students
+Grupo de recursos: rg-caribeshop-gmb25   Región: chilecentral
+URL: http://57.156.11.59

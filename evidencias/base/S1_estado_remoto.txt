@@ -1,0 +1,22 @@
+== Bloque backend de infra/versions.tf ==
+19:  backend "azurerm" {}
+20-}
+
+== .gitignore (estado, planes, tfvars) ==
+2:**/.terraform/*
+3:*.tfstate
+4:*.tfstate.*
+5:*.tfplan
+8:.terraformrc
+12:*.auto.tfvars
+13:*.tfvars
+14:!*.tfvars.example
+
+== Blobs de estado en el backend remoto ==
+Name                     Size    Modified
+-----------------------  ------  -------------------------
+caribeshop-prod.tfstate  83905   2026-11-24T04:17:05+00:00
+
+== Archivos de estado/tfvars rastreados por Git (debe quedar vacío) ==
+
+== Escaneo del historial de Git (debe quedar vacío) ==

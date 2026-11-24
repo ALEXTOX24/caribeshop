@@ -92,7 +92,7 @@ alert_email     = "$ALERT_EMAIL"
 ssh_public_key  = "$(cat "$KEY.pub")"
 vm_sku          = "$VM_SKU"
 min_instances   = 2
-max_instances   = 4
+max_instances   = ${MAX_INSTANCES:-4}
 zones           = ["1", "2"]
 public_ip_zones = ["1", "2", "3"]
 EOF

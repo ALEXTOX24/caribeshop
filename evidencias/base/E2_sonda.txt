@@ -1,0 +1,3 @@
+Nombre        Protocolo    Puerto    Ruta     Intervalo    Fallos
+------------  -----------  --------  -------  -----------  --------
+health-probe  Http         80        /health  5            1

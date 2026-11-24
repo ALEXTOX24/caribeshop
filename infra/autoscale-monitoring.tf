@@ -30,7 +30,7 @@ resource "azurerm_monitor_autoscale_setting" "vmss" {
       scale_action {
         direction = "Increase"
         type      = "ChangeCount"
-        value     = "2"
+        value     = "1"
         cooldown  = "PT5M"
       }
     }
@@ -51,7 +51,7 @@ resource "azurerm_monitor_autoscale_setting" "vmss" {
       scale_action {
         direction = "Decrease"
         type      = "ChangeCount"
-        value     = "2"
+        value     = "1"
         cooldown  = "PT10M"
       }
     }

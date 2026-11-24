@@ -1,0 +1,3 @@
+instanceId  nombre             zona  salud                estado
+0           vmss-caribeshop_0  2     HealthState/healthy  PowerState/running
+1           vmss-caribeshop_1  1     HealthState/healthy  PowerState/running

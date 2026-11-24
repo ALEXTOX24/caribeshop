@@ -1,0 +1,10 @@
+[
+  {
+    "health": "HealthState/healthy",
+    "id": "1",
+    "name": "vmss-caribeshop_1",
+    "power": "PowerState/running",
+    "provisioning": "Succeeded",
+    "zone": "1"
+  }
+]

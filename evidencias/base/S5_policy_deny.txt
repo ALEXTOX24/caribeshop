@@ -1,0 +1,11 @@
+Asignación de política:
+Nombre                              Efecto
+----------------------------------  --------
+CaribeShop - Deny insecure storage  Deny
+
+Intento de crear Storage Account badhttp95493887 con --https-only false (debe ser RECHAZADO):
+ERROR: (RequestDisallowedByPolicy) Resource 'badhttp95493887' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"CaribeShop - Deny insecure storage","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage"},"policyDefinition":{"name":"CaribeShop - Deny Storage Accounts without HTTPS only","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-gmb25","version":"1.0.0"}}]'.
+Code: RequestDisallowedByPolicy
+Message: Resource 'badhttp95493887' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"CaribeShop - Deny insecure storage","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage"},"policyDefinition":{"name":"CaribeShop - Deny Storage Accounts without HTTPS only","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-gmb25","version":"1.0.0"}}]'.
+Target: badhttp95493887
+Additional Information:Type: PolicyViolation

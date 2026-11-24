@@ -1,0 +1,85 @@
+{
+  "enabled": true,
+  "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/microsoft.insights/autoscalesettings/autoscale-caribeshop",
+  "location": "chilecentral",
+  "name": "autoscale-caribeshop",
+  "notifications": [
+    {
+      "email": {
+        "customEmails": [
+          "alsanchez@utb.edu.co"
+        ],
+        "sendToSubscriptionAdministrator": false,
+        "sendToSubscriptionCoAdministrators": false
+      },
+      "operation": "Scale",
+      "webhooks": []
+    }
+  ],
+  "predictiveAutoscalePolicy": {
+    "scaleMode": "Disabled"
+  },
+  "profiles": [
+    {
+      "capacity": {
+        "default": "2",
+        "maximum": "3",
+        "minimum": "2"
+      },
+      "name": "cpu-hysteresis",
+      "rules": [
+        {
+          "metricTrigger": {
+            "dimensions": [],
+            "dividePerInstance": false,
+            "metricName": "Percentage CPU",
+            "metricNamespace": "Microsoft.Compute/virtualMachineScaleSets",
+            "metricResourceUri": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
+            "operator": "GreaterThan",
+            "statistic": "Average",
+            "threshold": 70.0,
+            "timeAggregation": "Average",
+            "timeGrain": "PT1M",
+            "timeWindow": "PT5M"
+          },
+          "scaleAction": {
+            "cooldown": "PT5M",
+            "direction": "Increase",
+            "type": "ChangeCount",
+            "value": "1"
+          }
+        },
+        {
+          "metricTrigger": {
+            "dimensions": [],
+            "dividePerInstance": false,
+            "metricName": "Percentage CPU",
+            "metricNamespace": "Microsoft.Compute/virtualMachineScaleSets",
+            "metricResourceUri": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
+            "operator": "LessThan",
+            "statistic": "Average",
+            "threshold": 30.0,
+            "timeAggregation": "Average",
+            "timeGrain": "PT1M",
+            "timeWindow": "PT10M"
+          },
+          "scaleAction": {
+            "cooldown": "PT10M",
+            "direction": "Decrease",
+            "type": "ChangeCount",
+            "value": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "resourceGroup": "rg-caribeshop-gmb25",
+  "tags": {
+    "environment": "lab",
+    "managed_by": "Terraform",
+    "project": "CaribeShop",
+    "workshop": "seguridad-escalamiento-alta-disponibilidad"
+  },
+  "targetResourceUri": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
+  "type": "Microsoft.Insights/autoscaleSettings"
+}

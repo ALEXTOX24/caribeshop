@@ -1,0 +1,5 @@
+AzureDiagnostics
+| where ResourceProvider == 'MICROSOFT.KEYVAULT' and OperationName == 'SecretGet'
+| project TimeGenerated, OperationName, ResultType, CallerIPAddress, identity_claim_oid_g, httpStatusCode_d
+| order by TimeGenerated desc
+| take 20

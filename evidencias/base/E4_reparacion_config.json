@@ -1,0 +1,8 @@
+{
+  "capacidad": 2,
+  "reparacion": {
+    "enabled": true,
+    "gracePeriod": "PT10M",
+    "repairAction": "Replace"
+  }
+}

@@ -1,0 +1,11 @@
+== IPs públicas de instancias del VMSS (debe quedar vacío) ==
+
+
+== Reglas del NSG ==
+Prioridad    Nombre                  Dir       Acceso    Proto    Puerto    Origen             Destino
+-----------  ----------------------  --------  --------  -------  --------  -----------------  --------------
+100          Allow-HTTP-Internet     Inbound   Allow     Tcp      80        Internet           *
+100          Allow-KeyVault-HTTPS    Outbound  Allow     Tcp      443       *                  AzureKeyVault
+4000         Deny-VNet-Outbound      Outbound  Deny      *        *         *                  VirtualNetwork
+4090         Deny-Internet-Outbound  Outbound  Deny      *        *         *                  Internet
+110          Allow-LB-Probe          Inbound   Allow     Tcp      80        AzureLoadBalancer  *

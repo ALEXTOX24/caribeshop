@@ -1,0 +1,3 @@
+Nombre                     Habilitada    Severidad    Descripcion
+-------------------------  ------------  -----------  -----------------------------------------------------
+alert-caribeshop-high-cpu  True          2            CPU promedio del VMSS mayor a 80 % durante 5 minutos.

@@ -1,0 +1,214 @@
+{
+  "cost": 59,
+  "interval": "PT1M",
+  "namespace": "Microsoft.Network/loadBalancers",
+  "resourceregion": "chilecentral",
+  "timespan": "2026-11-24T03:18:14Z/2026-11-24T04:18:14Z",
+  "value": [
+    {
+      "displayDescription": "Average Load Balancer health probe status per time duration",
+      "errorCode": "Success",
+      "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Network/loadBalancers/lb-caribeshop/providers/Microsoft.Insights/metrics/DipAvailability",
+      "name": {
+        "localizedValue": "Health Probe Status",
+        "value": "DipAvailability"
+      },
+      "resourceGroup": "rg-caribeshop-gmb25",
+      "timeseries": [
+        {
+          "data": [
+            {
+              "timeStamp": "2026-11-24T03:18:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:19:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:20:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:21:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:22:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:23:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:24:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:25:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:26:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:27:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:28:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:29:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:30:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:31:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:32:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:33:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:34:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:35:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:36:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:37:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:38:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:39:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:40:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:41:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:42:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:43:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:44:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:45:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:46:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:47:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:48:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:49:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:50:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:51:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:52:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:53:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:54:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:55:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:56:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:57:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:58:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T03:59:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:00:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:01:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:02:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:03:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:04:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:05:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:06:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:07:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:08:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:09:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:10:00Z"
+            },
+            {
+              "timeStamp": "2026-11-24T04:11:00Z"
+            },
+            {
+              "average": 0.0,
+              "timeStamp": "2026-11-24T04:12:00Z"
+            },
+            {
+              "average": 100.0,
+              "timeStamp": "2026-11-24T04:13:00Z"
+            },
+            {
+              "average": 100.0,
+              "timeStamp": "2026-11-24T04:14:00Z"
+            },
+            {
+              "average": 100.0,
+              "timeStamp": "2026-11-24T04:15:00Z"
+            },
+            {
+              "average": 100.0,
+              "timeStamp": "2026-11-24T04:16:00Z"
+            },
+            {
+              "average": 100.0,
+              "timeStamp": "2026-11-24T04:17:00Z"
+            }
+          ],
+          "metadatavalues": []
+        }
+      ],
+      "type": "Microsoft.Insights/metrics",
+      "unit": "Count"
+    }
+  ]
+}
