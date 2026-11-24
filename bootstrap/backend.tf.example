@@ -1,0 +1,6 @@
+# Copiar a backend.tf SOLO después del primer apply local:
+#   cp backend.tf.example backend.tf
+# Luego ejecutar terraform init -migrate-state con los -backend-config del README.
+terraform {
+  backend "azurerm" {}
+}

@@ -1,0 +1,46 @@
+name: terraform-security
+
+on:
+  # D1: se ejecuta en TODOS los pull requests (sin filtro de rutas)
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  terraform-and-checkov:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.17.2
+
+      - name: Terraform fmt
+        run: terraform fmt -check -recursive
+
+      - name: Validate bootstrap
+        working-directory: bootstrap
+        run: |
+          terraform init -backend=false
+          terraform validate
+
+      - name: Validate infra
+        working-directory: infra
+        run: |
+          terraform init -backend=false
+          terraform validate
+
+      - name: Checkov (blocking)
+        uses: bridgecrewio/checkov-action@v12
+        with:
+          directory: .
+          framework: terraform
+          quiet: true
+          soft_fail: false
+          output_format: cli

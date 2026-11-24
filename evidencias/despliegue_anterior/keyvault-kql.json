@@ -1,0 +1,466 @@
+{
+  "tables": [
+    {
+      "columns": [
+        {
+          "name": "TenantId",
+          "type": "string"
+        },
+        {
+          "name": "TimeGenerated",
+          "type": "datetime"
+        },
+        {
+          "name": "ResourceId",
+          "type": "string"
+        },
+        {
+          "name": "Category",
+          "type": "string"
+        },
+        {
+          "name": "ResourceGroup",
+          "type": "string"
+        },
+        {
+          "name": "SubscriptionId",
+          "type": "string"
+        },
+        {
+          "name": "ResourceProvider",
+          "type": "string"
+        },
+        {
+          "name": "Resource",
+          "type": "string"
+        },
+        {
+          "name": "ResourceType",
+          "type": "string"
+        },
+        {
+          "name": "OperationName",
+          "type": "string"
+        },
+        {
+          "name": "ResultType",
+          "type": "string"
+        },
+        {
+          "name": "CorrelationId",
+          "type": "string"
+        },
+        {
+          "name": "ResultDescription",
+          "type": "string"
+        },
+        {
+          "name": "Tenant_g",
+          "type": "string"
+        },
+        {
+          "name": "JobId_g",
+          "type": "string"
+        },
+        {
+          "name": "RunbookName_s",
+          "type": "string"
+        },
+        {
+          "name": "StreamType_s",
+          "type": "string"
+        },
+        {
+          "name": "Caller_s",
+          "type": "string"
+        },
+        {
+          "name": "requestUri_s",
+          "type": "string"
+        },
+        {
+          "name": "Level",
+          "type": "string"
+        },
+        {
+          "name": "DurationMs",
+          "type": "long"
+        },
+        {
+          "name": "CallerIPAddress",
+          "type": "string"
+        },
+        {
+          "name": "OperationVersion",
+          "type": "string"
+        },
+        {
+          "name": "ResultSignature",
+          "type": "string"
+        },
+        {
+          "name": "id_s",
+          "type": "string"
+        },
+        {
+          "name": "status_s",
+          "type": "string"
+        },
+        {
+          "name": "LogicalServerName_s",
+          "type": "string"
+        },
+        {
+          "name": "Message",
+          "type": "string"
+        },
+        {
+          "name": "clientInfo_s",
+          "type": "string"
+        },
+        {
+          "name": "httpStatusCode_d",
+          "type": "real"
+        },
+        {
+          "name": "identity_claim_appid_g",
+          "type": "string"
+        },
+        {
+          "name": "identity_claim_http_schemas_microsoft_com_identity_claims_objectidentifier_g",
+          "type": "string"
+        },
+        {
+          "name": "userAgent_s",
+          "type": "string"
+        },
+        {
+          "name": "ruleName_s",
+          "type": "string"
+        },
+        {
+          "name": "identity_claim_http_schemas_xmlsoap_org_ws_2005_05_identity_claims_upn_s",
+          "type": "string"
+        },
+        {
+          "name": "systemId_g",
+          "type": "string"
+        },
+        {
+          "name": "isAccessPolicyMatch_b",
+          "type": "bool"
+        },
+        {
+          "name": "EventName_s",
+          "type": "string"
+        },
+        {
+          "name": "httpMethod_s",
+          "type": "string"
+        },
+        {
+          "name": "subnetId_s",
+          "type": "string"
+        },
+        {
+          "name": "type_s",
+          "type": "string"
+        },
+        {
+          "name": "instanceId_s",
+          "type": "string"
+        },
+        {
+          "name": "macAddress_s",
+          "type": "string"
+        },
+        {
+          "name": "vnetResourceGuid_g",
+          "type": "string"
+        },
+        {
+          "name": "direction_s",
+          "type": "string"
+        },
+        {
+          "name": "subnetPrefix_s",
+          "type": "string"
+        },
+        {
+          "name": "primaryIPv4Address_s",
+          "type": "string"
+        },
+        {
+          "name": "conditions_sourcePortRange_s",
+          "type": "string"
+        },
+        {
+          "name": "priority_d",
+          "type": "real"
+        },
+        {
+          "name": "conditions_destinationPortRange_s",
+          "type": "string"
+        },
+        {
+          "name": "conditions_destinationIP_s",
+          "type": "string"
+        },
+        {
+          "name": "conditions_None_s",
+          "type": "string"
+        },
+        {
+          "name": "conditions_sourceIP_s",
+          "type": "string"
+        },
+        {
+          "name": "httpVersion_s",
+          "type": "string"
+        },
+        {
+          "name": "matchedConnections_d",
+          "type": "real"
+        },
+        {
+          "name": "startTime_t",
+          "type": "datetime"
+        },
+        {
+          "name": "endTime_t",
+          "type": "datetime"
+        },
+        {
+          "name": "DatabaseName_s",
+          "type": "string"
+        },
+        {
+          "name": "clientIP_s",
+          "type": "string"
+        },
+        {
+          "name": "host_s",
+          "type": "string"
+        },
+        {
+          "name": "requestQuery_s",
+          "type": "string"
+        },
+        {
+          "name": "sslEnabled_s",
+          "type": "string"
+        },
+        {
+          "name": "clientPort_d",
+          "type": "real"
+        },
+        {
+          "name": "httpStatus_d",
+          "type": "real"
+        },
+        {
+          "name": "receivedBytes_d",
+          "type": "real"
+        },
+        {
+          "name": "sentBytes_d",
+          "type": "real"
+        },
+        {
+          "name": "timeTaken_d",
+          "type": "real"
+        },
+        {
+          "name": "resultDescription_ErrorJobs_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_ChildJobs_s",
+          "type": "string"
+        },
+        {
+          "name": "identity_claim_http_schemas_microsoft_com_identity_claims_scope_s",
+          "type": "string"
+        },
+        {
+          "name": "workflowId_s",
+          "type": "string"
+        },
+        {
+          "name": "resource_location_s",
+          "type": "string"
+        },
+        {
+          "name": "resource_workflowId_g",
+          "type": "string"
+        },
+        {
+          "name": "resource_resourceGroupName_s",
+          "type": "string"
+        },
+        {
+          "name": "resource_subscriptionId_g",
+          "type": "string"
+        },
+        {
+          "name": "resource_runId_s",
+          "type": "string"
+        },
+        {
+          "name": "resource_workflowName_s",
+          "type": "string"
+        },
+        {
+          "name": "_schema_s",
+          "type": "string"
+        },
+        {
+          "name": "correlation_clientTrackingId_s",
+          "type": "string"
+        },
+        {
+          "name": "properties_sku_Family_s",
+          "type": "string"
+        },
+        {
+          "name": "properties_sku_Name_s",
+          "type": "string"
+        },
+        {
+          "name": "properties_tenantId_g",
+          "type": "string"
+        },
+        {
+          "name": "properties_enabledForDeployment_b",
+          "type": "bool"
+        },
+        {
+          "name": "code_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_MachineId_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_ScheduleName_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_Status_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_StatusDescription_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_MachineName_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_TotalUpdatesInstalled_d",
+          "type": "real"
+        },
+        {
+          "name": "resultDescription_Summary_RebootRequired_b",
+          "type": "bool"
+        },
+        {
+          "name": "resultDescription_Summary_TotalUpdatesFailed_d",
+          "type": "real"
+        },
+        {
+          "name": "resultDescription_Summary_InstallPercentage_d",
+          "type": "real"
+        },
+        {
+          "name": "resultDescription_Summary_StartDateTimeUtc_t",
+          "type": "datetime"
+        },
+        {
+          "name": "resource_triggerName_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_InitialRequiredUpdatesCount_d",
+          "type": "real"
+        },
+        {
+          "name": "properties_enabledForTemplateDeployment_b",
+          "type": "bool"
+        },
+        {
+          "name": "resultDescription_Summary_EndDateTimeUtc_s",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_DurationInMinutes_s",
+          "type": "string"
+        },
+        {
+          "name": "resource_originRunId_s",
+          "type": "string"
+        },
+        {
+          "name": "properties_enabledForDiskEncryption_b",
+          "type": "bool"
+        },
+        {
+          "name": "resource_actionName_s",
+          "type": "string"
+        },
+        {
+          "name": "correlation_actionTrackingId_g",
+          "type": "string"
+        },
+        {
+          "name": "resultDescription_Summary_EndDateTimeUtc_t",
+          "type": "datetime"
+        },
+        {
+          "name": "resultDescription_Summary_DurationInMinutes_d",
+          "type": "real"
+        },
+        {
+          "name": "conditions_protocols_s",
+          "type": "string"
+        },
+        {
+          "name": "identity_claim_ipaddr_s",
+          "type": "string"
+        },
+        {
+          "name": "ElasticPoolName_s",
+          "type": "string"
+        },
+        {
+          "name": "identity_claim_http_schemas_microsoft_com_claims_authnmethodsreferences_s",
+          "type": "string"
+        },
+        {
+          "name": "RunOn_s",
+          "type": "string"
+        },
+        {
+          "name": "query_hash_s",
+          "type": "string"
+        },
+        {
+          "name": "SourceSystem",
+          "type": "string"
+        },
+        {
+          "name": "Type",
+          "type": "string"
+        },
+        {
+          "name": "_ResourceId",
+          "type": "string"
+        }
+      ],
+      "name": "PrimaryResult",
+      "rows": []
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+storage_test=badhttp95407993
+ERROR: (RequestDisallowedByPolicy) Resource 'badhttp95407993' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"CaribeShop - Deny insecure storage","id":"/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/resourceGroups/rg-caribeshop-29va3/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage"},"policyDefinition":{"name":"CaribeShop - Deny Storage Accounts without HTTPS only","id":"/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-29va3","version":"1.0.0"}}]'.
+Code: RequestDisallowedByPolicy
+Message: Resource 'badhttp95407993' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"CaribeShop - Deny insecure storage","id":"/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/resourceGroups/rg-caribeshop-29va3/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage"},"policyDefinition":{"name":"CaribeShop - Deny Storage Accounts without HTTPS only","id":"/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-29va3","version":"1.0.0"}}]'.
+Target: badhttp95407993
+Additional Information:Type: PolicyViolation
+Info: {
+    "evaluationDetails": {
+        "evaluatedExpressions": [
+            {
+                "result": "True",
+                "expressionKind": "Field",
+                "expression": "type",
+                "path": "type",
+                "expressionValue": "Microsoft.Storage/storageAccounts",
+                "targetValue": "Microsoft.Storage/storageAccounts",
+                "operator": "Equals"
+            },
+            {
+                "result": "True",
+                "expressionKind": "Field",
+                "expression": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly",
+                "path": "properties.supportsHttpsTrafficOnly",
+                "expressionValue": false,
+                "targetValue": "True",
+                "operator": "NotEquals"
+            }
+        ]
+    },
+    "policyDefinitionId": "/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-29va3",
+    "policyDefinitionName": "deny-storage-without-https-29va3",
+    "policyDefinitionDisplayName": "CaribeShop - Deny Storage Accounts without HTTPS only",
+    "policyDefinitionVersion": "1.0.0",
+    "policyDefinitionEffect": "Deny",
+    "policyAssignmentId": "/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/resourceGroups/rg-caribeshop-29va3/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage",
+    "policyAssignmentName": "deny-insecure-storage",
+    "policyAssignmentDisplayName": "CaribeShop - Deny insecure storage",
+    "policyAssignmentScope": "/subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/resourceGroups/rg-caribeshop-29va3",
+    "policyAssignmentParameters": {},
+    "policyExemptionIds": [],
+    "policyEnrollmentIds": []
+}

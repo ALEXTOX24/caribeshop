@@ -1,0 +1,3 @@
+Name                       Enabled    Severity
+-------------------------  ---------  ----------
+alert-caribeshop-high-cpu  True       2

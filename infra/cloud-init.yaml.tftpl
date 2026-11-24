@@ -1,0 +1,26 @@
+#cloud-config
+package_update: false
+package_upgrade: false
+
+write_files:
+  - path: /opt/caribeshop/app.py
+    permissions: '0755'
+    encoding: b64
+    content: ${app_b64}
+
+  - path: /etc/systemd/system/caribeshop.service
+    permissions: '0644'
+    encoding: b64
+    content: ${service_b64}
+
+  - path: /etc/caribeshop.env
+    permissions: '0600'
+    content: |
+      KEY_VAULT_URL=${key_vault_url}
+      SECRET_NAME=${secret_name}
+      PORT=80
+
+runcmd:
+  - mkdir -p /opt/caribeshop
+  - systemctl daemon-reload
+  - systemctl enable --now caribeshop.service

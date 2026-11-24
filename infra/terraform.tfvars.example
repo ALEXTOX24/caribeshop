@@ -1,0 +1,13 @@
+prefix      = "caribeshop"
+location    = "belgiumcentral"
+operator_ip = "203.0.113.10"          # Reemplazar; SIN /32.
+alert_email = "integrante@ejemplo.com" # Reemplazar.
+
+# Reemplazar por su llave pública real. Nunca use la llave privada.
+ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJEMPLO_REEMPLAZAR estudiante@equipo"
+
+vm_sku        = "Standard_D2as_v4"
+min_instances = 2
+max_instances = 4
+zones         = ["1", "2"]
+public_ip_zones = ["1", "2", "3"]

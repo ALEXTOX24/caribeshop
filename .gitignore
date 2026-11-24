@@ -1,0 +1,30 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+
+# Variables / secrets
+*.auto.tfvars
+*.tfvars
+!*.tfvars.example
+.env
+*.pem
+*.key
+
+# Local artifacts
+.DS_Store
+__pycache__/
+*.pyc
+loadtest/results/
+
+# Entorno local (no subir)
+.venv/
+.backend.env
+bootstrap/backend.tf.off
+
+# OJO: evidencias/ SÍ se sube (el taller exige CSV y HTML de Locust en el repo).

@@ -1,0 +1,22 @@
+
+== S2: IP públicas por instancia (debe quedar vacío) ==
+
+
+== E1: instancias ==
+InstanceId    ProvisioningState    LatestModelApplied
+------------  -------------------  --------------------
+0             Succeeded            True
+1             Succeeded            True
+
+== S4: roles de la identidad VMSS ==
+Principal                             Role                    Scope
+------------------------------------  ----------------------  ----------------------------------------------------------------------------------------------------------------------------------------------
+b2f47dd4-b7d3-4051-8b20-919d6719e109  Key Vault Secrets User  /subscriptions/40c0650c-af8b-44a2-beb1-8cfac02cbecb/resourceGroups/rg-caribeshop-29va3/providers/Microsoft.KeyVault/vaults/kv-caribeshop-29va3
+
+== S3: lectura segura del secreto ==
+{"key_vault_read":"ok","secret_name":"db-password","length":32,"sha256_12":"0410a55f95b5"}
+
+== Health ==
+{"status":"healthy"}
+
+Key Vault: kv-caribeshop-29va3
