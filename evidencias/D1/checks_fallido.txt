@@ -1,0 +1,11 @@
+Refreshing checks status every 15 seconds. Press Ctrl+C to quit.
+
+terraform-and-checkov	pending	0	https://github.com/ALEXTOX24/caribeshop/actions/runs/45483842711/job/138763828185	
+Refreshing checks status every 15 seconds. Press Ctrl+C to quit.
+
+terraform-and-checkov	pending	0	https://github.com/ALEXTOX24/caribeshop/actions/runs/45483842711/job/138763828185	
+Refreshing checks status every 15 seconds. Press Ctrl+C to quit.
+
+terraform-and-checkov	pending	0	https://github.com/ALEXTOX24/caribeshop/actions/runs/45483842711/job/138763828185	
+terraform-and-checkov	fail	36s	https://github.com/ALEXTOX24/caribeshop/actions/runs/45483842711/job/138763828185	
+terraform-and-checkov	fail	36s	https://github.com/ALEXTOX24/caribeshop/actions/runs/45483842711/job/138763828185	

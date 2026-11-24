@@ -15,3 +15,14 @@ Cada excepción de Checkov incluida en Terraform aparece en esta tabla con su mo
 | Estado Terraform contiene el secreto generado | Terraform crea el secreto y el estado puede contener valores sensibles | Una filtración del estado podría revelar el secreto | Backend remoto, Entra ID, firewall, ZRS, versionado y `.gitignore` |
 | Ejecución de código en una VM | Una RCE podría consultar IMDS y utilizar la identidad administrada | Podría leer el secreto asignado al VMSS | Rol de solo lectura, egress restringido, sin IP pública ni SSH |
 | Región Azure como dominio de falla | El alcance exige redundancia entre zonas, no entre regiones | Una caída regional interrumpe el servicio | VMSS en dos zonas y Standard Load Balancer |
+
+## Riesgos aceptados por el despliegue en Azure for Students
+
+| Riesgo | Causa | Impacto | Control / mitigación |
+|---|---|---|---|
+| Firewall del Storage del estado Terraform en `default_action=Allow` | Las reglas de IP del Storage no aplican al tráfico desde GitHub Codespaces (red interna de Azure); con `Deny` Terraform recibía 403 | Se pierde la capa de red sobre el backend del estado | Acceso solo con identidad Entra ID y rol `Storage Blob Data Contributor`; shared keys deshabilitadas; HTTPS/TLS 1.2. En producción: Private Endpoint o runner con IP fija |
+| Región única `chilecentral` | Política de la suscripción (5 regiones permitidas) y disponibilidad de SKU/capacidad | Una caída regional interrumpe el servicio | VMSS en 2 zonas + LB/IP zonal-redundante |
+| Máximo 3 instancias | Cuota de 6 vCPU regionales | Techo de escalado para picos grandes | Perfil programado ante campañas; solicitar cuota en producción |
+| VMs serie B (burstable) | Familias D con cuota 0 | Rendimiento dependiente de créditos de CPU | Créditos monitoreados durante P1 (no se agotaron) |
+| Umbrales de autoscale 35/15 % y alerta 40 % | La app Python de un proceso usa 1 de 2 vCPU (GIL) | `Percentage CPU` no supera ~50 % | Umbrales recalculados sobre la CPU utilizable; alternativa: varios procesos por VM |
+| Capacidad no restaurada tras eliminar una instancia | `az vmss delete-instances` reduce la capacidad deseada y el autoscale no lo detectó (`ObservedCapacity` = 2) | Operación con 1 instancia hasta intervención manual | Alerta recomendada sobre instancias sanas < 2; restauración con `az vmss scale` |

@@ -1,0 +1,198 @@
+{
+  "P1_capacidad": {
+    "corridas": [
+      {
+        "usuarios": 10.0,
+        "rps": 26.9,
+        "p95_ms": 230.0,
+        "p50_ms": 220.0,
+        "error_pct": 0.0,
+        "requests": 3232.0
+      },
+      {
+        "usuarios": 20.0,
+        "rps": 53.5,
+        "p95_ms": 230.0,
+        "p50_ms": 220.0,
+        "error_pct": 0.0,
+        "requests": 6426.0
+      },
+      {
+        "usuarios": 40.0,
+        "rps": 107.3,
+        "p95_ms": 230.0,
+        "p50_ms": 220.0,
+        "error_pct": 0.0,
+        "requests": 12889.0
+      },
+      {
+        "usuarios": 60.0,
+        "rps": 160.6,
+        "p95_ms": 230.0,
+        "p50_ms": 220.0,
+        "error_pct": 0.0,
+        "requests": 19141.0
+      },
+      {
+        "usuarios": 80.0,
+        "rps": 213.4,
+        "p95_ms": 230.0,
+        "p50_ms": 220.0,
+        "error_pct": 0.0,
+        "requests": 25637.0
+      },
+      {
+        "usuarios": 100.0,
+        "rps": 266.5,
+        "p95_ms": 230.0,
+        "p50_ms": 220.0,
+        "error_pct": 0.0,
+        "requests": 32012.0
+      },
+      {
+        "usuarios": 130.0,
+        "rps": 343.5,
+        "p95_ms": 240.0,
+        "p50_ms": 230.0,
+        "error_pct": 0.0,
+        "requests": 41179.0
+      },
+      {
+        "usuarios": 160.0,
+        "rps": 415.1,
+        "p95_ms": 260.0,
+        "p50_ms": 230.0,
+        "error_pct": 0.0,
+        "requests": 49883.0
+      },
+      {
+        "usuarios": 200.0,
+        "rps": 344.4,
+        "p95_ms": 540.0,
+        "p50_ms": 440.0,
+        "error_pct": 0.0,
+        "requests": 41436.0
+      },
+      {
+        "usuarios": 250.0,
+        "rps": 368.3,
+        "p95_ms": 630.0,
+        "p50_ms": 540.0,
+        "error_pct": 0.0,
+        "requests": 44371.0
+      },
+      {
+        "usuarios": 300.0,
+        "rps": 387.3,
+        "p95_ms": 730.0,
+        "p50_ms": 640.0,
+        "error_pct": 0.0,
+        "requests": 46765.0
+      }
+    ],
+    "rps_max_p95_menor_1s": 415.1,
+    "rps_max_p95_menor_500ms": 415.1,
+    "p95_minimo_observado_ms": 230.0
+  },
+  "pregunta_1": {
+    "rps_base": 415.1,
+    "base": "p95<500ms",
+    "n_teorico": 1,
+    "n_recomendado": 2,
+    "vcpu_necesarias": 4
+  },
+  "P1_escalonado": {
+    "duracion_min": 35.03333333333333,
+    "peticiones": 513300,
+    "fallas": 4,
+    "error_pct": 0.0007792713812585232,
+    "rps_pico": 398.2,
+    "p95_max_ms": 1400.0,
+    "max_instancias": 3,
+    "eventos_autoscale": [
+      {
+        "hora": "18:00:52",
+        "min": -44.9,
+        "dir": "?",
+        "old": null,
+        "new": null
+      },
+      {
+        "hora": "18:10:55",
+        "min": -34.8,
+        "dir": "?",
+        "old": null,
+        "new": null
+      },
+      {
+        "hora": "18:41:28",
+        "min": -4.3,
+        "dir": "?",
+        "old": null,
+        "new": null
+      },
+      {
+        "hora": "18:51:32",
+        "min": 5.8,
+        "dir": "?",
+        "old": null,
+        "new": null
+      },
+      {
+        "hora": "18:59:47",
+        "min": 14.0,
+        "dir": "out",
+        "old": "2",
+        "new": "3"
+      },
+      {
+        "hora": "19:18:19",
+        "min": 32.6,
+        "dir": "in",
+        "old": "3",
+        "new": "2"
+      }
+    ],
+    "t_umbral_cpu": null,
+    "t_scale_out": "18:59:47",
+    "t_nuevas_sanas": "19:01:35",
+    "reaccion_umbral_a_scaleout_s": null,
+    "reaccion_umbral_a_sanas_s": null,
+    "t_scale_in": "19:18:19"
+  },
+  "P2_falla_logica": {
+    "instancia": "vmss-caribeshop_5",
+    "t0": "19:25:38",
+    "t1_ultima_peticion_a_instancia": "sin peticiones a la instancia después de T0",
+    "tiempo_hasta_dejar_de_recibir_s": 0.0,
+    "reparacion_automatica_s": 703.0,
+    "instancias_tras_reparacion": "6 8",
+    "ventana_falla": "19:25:38 – 19:25:53",
+    "locust_peticiones_ventana": 7047,
+    "locust_fallas_ventana": 0,
+    "locust_error_pct_ventana": 0.0,
+    "sonda_peticiones_ventana": 13,
+    "sonda_fallas_ventana": 12,
+    "sonda_error_pct_ventana": 92.31,
+    "locust_total_peticiones": 276653,
+    "locust_total_fallas": 0,
+    "locust_error_pct_total": 0.0
+  },
+  "P2_falla_abrupta": {
+    "instancia": "vmss-caribeshop_6",
+    "t0": "19:51:53",
+    "ultima_falla_sonda": "20:03:09",
+    "errores_hasta_s": 676.2,
+    "recuperacion_capacidad_minima_s": null,
+    "ventana_falla": "19:51:53 – 20:03:24",
+    "locust_peticiones_ventana": 240424,
+    "locust_fallas_ventana": 912,
+    "locust_error_pct_ventana": 0.38,
+    "sonda_peticiones_ventana": 1172,
+    "sonda_fallas_ventana": 425,
+    "sonda_error_pct_ventana": 36.26,
+    "locust_total_peticiones": 302564,
+    "locust_total_fallas": 912,
+    "locust_error_pct_total": 0.301
+  }
+}

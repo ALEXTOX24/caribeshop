@@ -37,7 +37,7 @@
             "metricResourceUri": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
             "operator": "GreaterThan",
             "statistic": "Average",
-            "threshold": 70.0,
+            "threshold": 35.0,
             "timeAggregation": "Average",
             "timeGrain": "PT1M",
             "timeWindow": "PT5M"
@@ -58,7 +58,7 @@
             "metricResourceUri": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
             "operator": "LessThan",
             "statistic": "Average",
-            "threshold": 30.0,
+            "threshold": 15.0,
             "timeAggregation": "Average",
             "timeGrain": "PT1M",
             "timeWindow": "PT10M"
