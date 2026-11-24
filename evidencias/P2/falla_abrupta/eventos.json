@@ -1,0 +1,9 @@
+{
+  "prueba": "falla_abrupta",
+  "instancia_id": "6",
+  "instancia_nombre": "vmss-caribeshop_6",
+  "t0": 1795549913.750,
+  "inicio": 1795549793,
+  "recuperada_epoch": null,
+  "usuarios_locust": 180
+}

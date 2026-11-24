@@ -1,0 +1,13 @@
+{
+  "prueba": "falla_logica",
+  "instancia_id": "5",
+  "instancia_nombre": "vmss-caribeshop_5",
+  "t0_vm": 1795548339.074622016,
+  "t0_local_antes": 1795548331.608,
+  "t0_local_despues": 1795548365.161,
+  "inicio": 1795548211,
+  "desfase_reloj_s": -0.44,
+  "reparada_epoch": 1795549042,
+  "instancias_tras_reparacion": "6 8",
+  "usuarios_locust": 180
+}

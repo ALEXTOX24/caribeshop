@@ -1,0 +1,6 @@
+Fecha: 2026-11-24T20:16:41Z   IP del operador: 135.237.130.237
+Lectura de metadatos del secreto desde la red AUTORIZADA (se omite el valor):
+{
+  "expira": "2027-02-22T02:46:38+00:00",
+  "id": "https://kv-caribeshop-gmb25.vault.azure.net/secrets/db-password/815091eeed464e08997602819eeec8c4"
+}

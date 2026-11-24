@@ -1,0 +1,8 @@
+Fecha: 2026-11-24T20:18:25Z
+az storage account create -g rg-caribeshop-gmb25 -n badhttp95551505 --https-only false
+ERROR: (RequestDisallowedByPolicy) Resource 'badhttp95551505' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"CaribeShop - Deny insecure storage","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage"},"policyDefinition":{"name":"CaribeShop - Deny Storage Accounts without HTTPS only","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-gmb25","version":"1.0.0"}}]'.
+Code: RequestDisallowedByPolicy
+Message: Resource 'badhttp95551505' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"CaribeShop - Deny insecure storage","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Authorization/policyAssignments/deny-insecure-storage"},"policyDefinition":{"name":"CaribeShop - Deny Storage Accounts without HTTPS only","id":"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/providers/Microsoft.Authorization/policyDefinitions/deny-storage-without-https-gmb25","version":"1.0.0"}}]'.
+Target: badhttp95551505
+Additional Information:Type: PolicyViolation
+Info: {

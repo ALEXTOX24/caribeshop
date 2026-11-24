@@ -1,0 +1,10 @@
+[
+  {
+    "serviceName": "AutomaticRepairs",
+    "serviceState": "Running"
+  },
+  {
+    "serviceName": "AutomaticZoneRebalancing",
+    "serviceState": "NotRunning"
+  }
+]

@@ -1,0 +1,268 @@
+{
+  "cost": 59,
+  "interval": "PT1M",
+  "namespace": "microsoft.insights/autoscalesettings",
+  "resourceregion": "chilecentral",
+  "timespan": "2026-11-24T19:08:31Z/2026-11-24T20:08:31Z",
+  "value": [
+    {
+      "displayDescription": "The capacity reported to autoscale when it executed.",
+      "errorCode": "Success",
+      "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/microsoft.insights/autoscalesettings/autoscale-caribeshop/providers/Microsoft.Insights/metrics/ObservedCapacity",
+      "name": {
+        "localizedValue": "Observed Capacity",
+        "value": "ObservedCapacity"
+      },
+      "resourceGroup": "rg-caribeshop-gmb25",
+      "timeseries": [
+        {
+          "data": [
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:08:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:09:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:10:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:11:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:12:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:13:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:14:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:15:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:16:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:17:00Z"
+            },
+            {
+              "average": 3.0,
+              "timeStamp": "2026-11-24T19:18:00Z"
+            },
+            {
+              "average": 2.4285714285714284,
+              "timeStamp": "2026-11-24T19:19:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:20:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:21:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:22:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:23:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:24:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:25:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:26:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:27:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:28:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:29:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:30:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:31:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:32:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:33:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:34:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:35:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:36:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:37:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:38:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:39:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:40:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:41:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:42:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:43:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:44:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:45:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:46:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:47:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:48:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:49:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:50:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:51:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:52:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:53:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:54:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:55:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:56:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:57:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:58:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T19:59:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:00:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:01:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:02:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:03:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:04:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:05:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:06:00Z"
+            },
+            {
+              "average": 2.0,
+              "timeStamp": "2026-11-24T20:07:00Z"
+            }
+          ],
+          "metadatavalues": []
+        }
+      ],
+      "type": "Microsoft.Insights/metrics",
+      "unit": "Count"
+    }
+  ]
+}

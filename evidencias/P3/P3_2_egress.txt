@@ -1,0 +1,20 @@
+Fecha: 2026-11-24T20:16:46Z   Instancia: 8
+Reglas de salida del NSG:
+Prioridad    Nombre                  Acceso    Puerto    Destino
+-----------  ----------------------  --------  --------  --------------
+100          Allow-KeyVault-HTTPS    Allow     443       AzureKeyVault
+4000         Deny-VNet-Outbound      Deny      *         VirtualNetwork
+4090         Deny-Internet-Outbound  Deny      *         Internet
+
+Resultado dentro de la VM:
+Enable succeeded: 
+[stdout]
+https://example.com -> BLOQUEADO URLError
+https://www.google.com -> BLOQUEADO URLError
+https://github.com -> BLOQUEADO URLError
+https://kv-caribeshop-gmb25.vault.azure.net/ -> ALCANZABLE (HTTP 404 )
+
+App leyendo Key Vault desde la misma instancia:
+{"key_vault_read":"ok","secret_name":"db-password","length":32,"sha256_12":"6a4a7e67728a"}
+[stderr]
+

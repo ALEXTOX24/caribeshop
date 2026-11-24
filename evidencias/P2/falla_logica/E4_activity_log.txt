@@ -1,0 +1,11 @@
+T                             Op                                                                         Estado     Quien
+----------------------------  -------------------------------------------------------------------------  ---------  ------------------------------------
+2026-11-24T19:25:47.1499885Z  Run Command on a Virtual Machine instance in a Virtual Machine Scale Set.  Succeeded  alsanchez@utb.edu.co
+2026-11-24T19:25:33.5065455Z  Run Command on a Virtual Machine instance in a Virtual Machine Scale Set.  Accepted   alsanchez@utb.edu.co
+2026-11-24T19:25:33.1315405Z  Run Command on a Virtual Machine instance in a Virtual Machine Scale Set.  Started    alsanchez@utb.edu.co
+2026-11-24T19:18:35.4488187Z  Create or Update Virtual Machine Scale Set                                 Succeeded  e144fe36-07ff-4b61-b6fa-c4b0cb1e0753
+2026-11-24T19:18:17.2142418Z  Create or Update Virtual Machine Scale Set                                 Accepted   e144fe36-07ff-4b61-b6fa-c4b0cb1e0753
+2026-11-24T19:18:16.1204841Z  Create or Update Virtual Machine Scale Set                                 Started    e144fe36-07ff-4b61-b6fa-c4b0cb1e0753
+2026-11-24T19:00:19.136179Z   Create or Update Virtual Machine Scale Set                                 Succeeded  e144fe36-07ff-4b61-b6fa-c4b0cb1e0753
+2026-11-24T18:59:46.1553042Z  Create or Update Virtual Machine Scale Set                                 Accepted   e144fe36-07ff-4b61-b6fa-c4b0cb1e0753
+2026-11-24T18:59:44.1865661Z  Create or Update Virtual Machine Scale Set                                 Started    e144fe36-07ff-4b61-b6fa-c4b0cb1e0753

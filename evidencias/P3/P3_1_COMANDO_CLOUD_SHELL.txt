@@ -1,0 +1,8 @@
+P3.1 — Abra https://shell.azure.com (Bash) con el MISMO usuario y pegue:
+
+az keyvault secret show --vault-name kv-caribeshop-gmb25 --name db-password --query id -o tsv
+
+Resultado esperado: error "Forbidden ... Client address is not authorized" / ForbiddenByFirewall,
+aunque el usuario tiene el rol Key Vault Secrets Officer. Tome CAPTURA de pantalla y guárdela como
+evidencias/P3/P3_1_cloud_shell_bloqueado.png. Copie también el texto del error en
+evidencias/P3/P3_1_cloud_shell_bloqueado.txt
