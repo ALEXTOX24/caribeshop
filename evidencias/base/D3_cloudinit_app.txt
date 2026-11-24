@@ -1,5 +1,5 @@
 == Respuesta de / en varias peticiones (instancias creadas solo con cloud-init) ==
-{"instancia":"vmss-caribeshop_0","zona":"2"}
-{"instancia":"vmss-caribeshop_1","zona":"1"}
-{"instancia":"vmss-caribeshop_0","zona":"2"}
-{"instancia":"vmss-caribeshop_1","zona":"1"}
+{"instancia":"vmss-caribeshop_8","zona":"1"}
+{"instancia":"vmss-caribeshop_9","zona":"2"}
+{"instancia":"vmss-caribeshop_8","zona":"1"}
+{"instancia":"vmss-caribeshop_9","zona":"2"}

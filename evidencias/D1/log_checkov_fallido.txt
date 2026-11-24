@@ -1,0 +1,48 @@
+terraform-and-checkov	Checkov (blocking)	﻿2026-11-24T20:44:31.4107392Z ##[group]Run bridgecrewio/checkov-action@v12
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4107816Z with:
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4108099Z   directory: .
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4108452Z   framework: terraform
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4108750Z   quiet: true
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4109045Z   soft_fail: false
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4109332Z   output_format: cli
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4109638Z   log_level: WARNING
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4109950Z   container_user: 0
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4110317Z env:
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4110761Z   TERRAFORM_CLI_PATH: /home/runner/work/_temp/0811daed-fa65-4c0e-b538-0a896340f263
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4111310Z ##[endgroup]
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:31.4271277Z ##[command]/usr/bin/docker run --name ghcriobridgecrewiocheckov3410_cebca7 --label 728b02 --workdir /github/workspace --rm -e "TERRAFORM_CLI_PATH" -e "INPUT_DIRECTORY" -e "INPUT_FRAMEWORK" -e "INPUT_QUIET" -e "INPUT_SOFT_FAIL" -e "INPUT_OUTPUT_FORMAT" -e "INPUT_FILE" -e "INPUT_CHECK" -e "INPUT_SKIP_CHECK" -e "INPUT_COMPACT" -e "INPUT_API-KEY" -e "INPUT_OUTPUT_BC_IDS" -e "INPUT_USE_ENFORCEMENT_RULES" -e "INPUT_SKIP_RESULTS_UPLOAD" -e "INPUT_SKIP_FRAMEWORK" -e "INPUT_EXTERNAL_CHECKS_DIRS" -e "INPUT_EXTERNAL_CHECKS_REPOS" -e "INPUT_OUTPUT_FILE_PATH" -e "INPUT_DOWNLOAD_EXTERNAL_MODULES" -e "INPUT_ENABLE_SECRETS_SCAN_ALL_FILES" -e "INPUT_LOG_LEVEL" -e "INPUT_CONFIG_FILE" -e "INPUT_BASELINE" -e "INPUT_SOFT_FAIL_ON" -e "INPUT_HARD_FAIL_ON" -e "INPUT_CONTAINER_USER" -e "INPUT_DOCKER_IMAGE" -e "INPUT_DOCKERFILE_PATH" -e "INPUT_VAR_FILE" -e "INPUT_GITHUB_PAT" -e "INPUT_TFC_TOKEN" -e "INPUT_TF_REGISTRY_TOKEN" -e "INPUT_CKV_VALIDATE_SECRETS" -e "INPUT_VCS_BASE_URL" -e "INPUT_VCS_USERNAME" -e "INPUT_VCS_TOKEN" -e "INPUT_BITBUCKET_TOKEN" -e "INPUT_BITBUCKET_APP_PASSWORD" -e "INPUT_BITBUCKET_USERNAME" -e "INPUT_REPO_ROOT_FOR_PLAN_ENRICHMENT" -e "INPUT_DEEP_ANALYSIS" -e "INPUT_POLICY_METADATA_FILTER" -e "INPUT_POLICY_METADATA_FILTER_EXCEPTION" -e "INPUT_SKIP_PATH" -e "INPUT_SKIP_CVE_PACKAGE" -e "INPUT_SKIP_DOWNLOAD" -e "INPUT_PRISMA-API-URL" -e "API_KEY_VARIABLE" -e "GITHUB_PAT" -e "TFC_TOKEN" -e "TF_REGISTRY_TOKEN" -e "VCS_USERNAME" -e "VCS_BASE_URL" -e "VCS_TOKEN" -e "BITBUCKET_TOKEN" -e "BITBUCKET_USERNAME" -e "BITBUCKET_APP_PASSWORD" -e "PRISMA_API_URL" -e "CKV_VALIDATE_SECRETS" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "GITHUB_ARTIFACTS" -e "GITHUB_ARTIFACTS_LIST" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e "ACTIONS_CACHE_MODE" -e "ACTIONS_ORCHESTRATION_ID" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp":"/github/runner_temp" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/caribeshop/caribeshop":"/github/workspace" ghcr.io/bridgecrewio/checkov:3.4.10  "" "." "" "" "" "true" "false" "" "" "" "terraform" "" "" "" "cli" "" "" "" "WARNING" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "--user 0"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5921986Z running checkov on directory: .
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5943658Z BC_FROM_BRANCH=test/checkov-falla-ssh
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5944264Z BC_TO_BRANCH=main
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5950002Z BC_PR_ID=1
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5950492Z BC_PR_URL=https://github.com/ALEXTOX24/caribeshop/pull/1
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5950986Z BC_COMMIT_HASH=689d9bd75d4cd1247906d823ade1f393d715e691
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5951636Z BC_COMMIT_URL=https://github.com/ALEXTOX24/caribeshop/commit/689d9bd75d4cd1247906d823ade1f393d715e691
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5952168Z BC_AUTHOR_NAME=ALEXTOX24
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5952532Z BC_AUTHOR_URL=https://github.com/ALEXTOX24
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5952972Z BC_RUN_ID=1
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5953347Z BC_RUN_URL=https://github.com/ALEXTOX24/caribeshop/actions/runs/45483842711
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5953852Z BC_REPOSITORY_URL=https://github.com/ALEXTOX24/caribeshop
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:33.5954353Z checkov -d . --quiet --framework terraform --output cli
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4314361Z terraform scan results:
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4314665Z 
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4314816Z Passed checks: 29, Failed checks: 1, Skipped checks: 12
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4315259Z 
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4322976Z Check: CKV_AZURE_10: "Ensure that SSH access is restricted from the internet"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4324153Z 	FAILED for resource: azurerm_network_security_rule.ssh_abierto_prueba
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4346227Z ##[error]	File: /infra/zz_prueba_insegura.tf:3-15
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4352322Z 	Guide: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/azure-policies/azure-networking-policies/bc-azr-networking-3
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4352856Z 
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4353035Z 		3  | resource "azurerm_network_security_rule" "ssh_abierto_prueba" {
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4353465Z 		4  |   name                        = "Allow-SSH-Internet-PRUEBA"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4353853Z 		5  |   priority                    = 300
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4354189Z 		6  |   direction                   = "Inbound"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4354556Z 		7  |   access                      = "Allow"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4354914Z 		8  |   protocol                    = "Tcp"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4355271Z 		9  |   source_port_range           = "*"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4355720Z 		10 |   destination_port_range      = "22"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4356316Z 		11 |   source_address_prefix       = "*"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4356709Z 		12 |   destination_address_prefix  = "*"
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4357137Z 		13 |   resource_group_name         = azurerm_resource_group.main.name
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4357630Z 		14 |   network_security_group_name = azurerm_network_security_group.app.name
+terraform-and-checkov	Checkov (blocking)	2026-11-24T20:44:36.4358128Z 		15 | }

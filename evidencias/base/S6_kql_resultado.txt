@@ -1,0 +1,25 @@
+principal_id del VMSS: ced451a4-93e8-44f1-89f7-92bf8f9f389c
+
+TimeGenerated                 Operacion  Resultado  IP               identity_oid                          http
+2026-11-24T20:59:27.6167102Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T20:33:13.6465496Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T20:21:05.9753174Z  SecretGet  Success    48.221.10.88     27bde1c0-9602-4e9a-a020-d3cf94dc38ff  403
+2026-11-24T20:18:02.4739051Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T20:16:43.5703042Z  SecretGet  Success    135.237.130.237  27bde1c0-9602-4e9a-a020-d3cf94dc38ff  200
+2026-11-24T19:59:57.7008291Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6956278Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.695482Z   SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6948742Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6925756Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6913004Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6632723Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6555577Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6502139Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6469544Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6391031Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.6287304Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.5986169Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:59:57.5983012Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+2026-11-24T19:54:57.4334075Z  SecretGet  Success    0.0.0.0          ced451a4-93e8-44f1-89f7-92bf8f9f389c  200
+
+Coinciden con el VMSS: 18 filas

@@ -15,7 +15,7 @@
 == Blobs de estado en el backend remoto ==
 Name                     Size    Modified
 -----------------------  ------  -------------------------
-caribeshop-prod.tfstate  83905   2026-11-24T04:17:05+00:00
+caribeshop-prod.tfstate  84107   2026-11-24T18:44:08+00:00
 
 == Archivos de estado/tfvars rastreados por Git (debe quedar vacío) ==
 
