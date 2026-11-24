@@ -1,8 +1,8 @@
 [
   {
     "health": "HealthState/healthy",
-    "id": "1",
-    "name": "vmss-caribeshop_1",
+    "id": "5",
+    "name": "vmss-caribeshop_5",
     "power": "PowerState/running",
     "provisioning": "Succeeded",
     "zone": "1"

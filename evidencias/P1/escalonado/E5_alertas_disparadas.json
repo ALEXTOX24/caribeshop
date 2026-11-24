@@ -1,0 +1,32 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/microsoft.compute/virtualmachinescalesets/vmss-caribeshop/providers/Microsoft.AlertsManagement/alerts/30fdadc4-2fce-4162-be47-3f5ced8ff000",
+      "name": "alert-caribeshop-high-cpu",
+      "properties": {
+        "essentials": {
+          "actionStatus": {
+            "isSuppressed": false
+          },
+          "alertRule": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/metricAlerts/alert-caribeshop-high-cpu",
+          "alertState": "New",
+          "description": "CPU promedio del VMSS mayor a 80 % durante 5 minutos.",
+          "lastModifiedDateTime": "2026-11-24T19:07:02.8571607Z",
+          "lastModifiedUserName": "System",
+          "monitorCondition": "Resolved",
+          "monitorConditionResolvedDateTime": "2026-11-24T19:07:03.0943611Z",
+          "monitorService": "Platform",
+          "severity": "Sev2",
+          "signalType": "Metric",
+          "sourceCreatedId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab_rg-caribeshop-gmb25_Microsoft.Insights_metricAlerts_alert-caribeshop-high-cpu_-1721735431",
+          "startDateTime": "2026-11-24T19:03:28.9689506Z",
+          "targetResource": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/microsoft.compute/virtualmachinescalesets/vmss-caribeshop",
+          "targetResourceGroup": "rg-caribeshop-gmb25",
+          "targetResourceName": "vmss-caribeshop",
+          "targetResourceType": "virtualmachinescalesets"
+        }
+      },
+      "type": "microsoft.alertsmanagement/alerts"
+    }
+  ]
+}

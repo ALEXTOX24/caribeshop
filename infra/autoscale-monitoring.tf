@@ -24,7 +24,7 @@ resource "azurerm_monitor_autoscale_setting" "vmss" {
         time_window        = "PT5M"
         time_aggregation   = "Average"
         operator           = "GreaterThan"
-        threshold          = 70
+        threshold          = 35
       }
 
       scale_action {
@@ -45,7 +45,7 @@ resource "azurerm_monitor_autoscale_setting" "vmss" {
         time_window        = "PT10M"
         time_aggregation   = "Average"
         operator           = "LessThan"
-        threshold          = 30
+        threshold          = 15
       }
 
       scale_action {
@@ -96,7 +96,7 @@ resource "azurerm_monitor_metric_alert" "high_cpu" {
     metric_name      = "Percentage CPU"
     aggregation      = "Average"
     operator         = "GreaterThan"
-    threshold        = 80
+    threshold        = 40
   }
 
   action {

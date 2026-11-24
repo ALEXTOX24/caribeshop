@@ -107,6 +107,7 @@ def cpu_work(iterations: int) -> str:
 
 
 class Handler(BaseHTTPRequestHandler):
+    protocol_version = "HTTP/1.1"  # keep-alive: reutiliza conexiones (evita agotar puertos SNAT del cliente)
     server_version = "CaribeShopLab/1.0"
 
     def log_message(self, fmt: str, *args: Any) -> None:

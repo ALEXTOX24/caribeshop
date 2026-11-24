@@ -1,0 +1,894 @@
+[
+  {
+    "caller": "Microsoft.Insights/autoscaleSettings",
+    "category": {
+      "localizedValue": "Autoscale",
+      "value": "Autoscale"
+    },
+    "claims": {
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn": "Microsoft.Insights/autoscaleSettings"
+    },
+    "correlationId": "134214bf-64b7-4888-82fa-942eaadce5e6",
+    "description": "The autoscale engine attempting to scale resource '/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop' from 3 instances count to 2 instances count.",
+    "eventDataId": "8b6fc687-17d8-51fe-fac9-924f1864c834",
+    "eventName": {
+      "localizedValue": "Autoscale a resource.",
+      "value": "AutoscaleAction"
+    },
+    "eventTimestamp": "2026-11-24T19:18:19.322166Z",
+    "id": "/SUBSCRIPTIONS/8176B01F-33D9-4775-83AD-A5EC8767B1AB/RESOURCEGROUPS/RG-CARIBESHOP-GMB25/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CARIBESHOP/events/8b6fc687-17d8-51fe-fac9-924f1864c834/ticks/639311446993221660",
+    "level": "Informational",
+    "operationId": "998a0964-b55e-44aa-8a09-177aabff19e0",
+    "operationName": {
+      "localizedValue": "Autoscale scale down initiated",
+      "value": "Microsoft.Insights/AutoscaleSettings/Scaledown/Action"
+    },
+    "properties": {
+      "ActiveAutoscaleProfile": "{\r\n  \"Name\": \"cpu-hysteresis\",\r\n  \"Capacity\": {\r\n    \"Minimum\": \"2\",\r\n    \"Maximum\": \"3\",\r\n    \"Default\": \"2\"\r\n  },\r\n  \"Rules\": [\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"Microsoft.Compute/virtualMachineScaleSets\",\r\n        \"Resource\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"ResourceLocation\": \"chilecentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT5M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"GreaterThan\",\r\n        \"Threshold\": 35.0,\r\n        \"Source\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Increase\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT5M\"\r\n      }\r\n    },\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"Microsoft.Compute/virtualMachineScaleSets\",\r\n        \"Resource\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"ResourceLocation\": \"chilecentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT10M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"LessThan\",\r\n        \"Threshold\": 15.0,\r\n        \"Source\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Decrease\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT10M\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Description": "The autoscale engine attempting to scale resource '/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop' from 3 instances count to 2 instances count.",
+      "LastScaleActionTime": "Tue, 24 Nov 2026 19:18:17 GMT",
+      "NewInstancesCount": "2",
+      "OldInstancesCount": "3",
+      "ResourceName": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
+      "eventName": "AutoscaleAction",
+      "operationId": "998a0964-b55e-44aa-8a09-177aabff19e0"
+    },
+    "resourceGroup": "RG-CARIBESHOP-GMB25",
+    "resourceGroupName": "RG-CARIBESHOP-GMB25",
+    "resourceId": "/SUBSCRIPTIONS/8176B01F-33D9-4775-83AD-A5EC8767B1AB/RESOURCEGROUPS/RG-CARIBESHOP-GMB25/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CARIBESHOP",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "MICROSOFT.INSIGHTS"
+    },
+    "resourceType": {
+      "localizedValue": "MICROSOFT.INSIGHTS/autoscalesettings",
+      "value": "MICROSOFT.INSIGHTS/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T19:18:19.322166Z",
+    "subscriptionId": "8176B01F-33D9-4775-83AD-A5EC8767B1AB",
+    "tenantId": ""
+  },
+  {
+    "caller": "Microsoft.Insights/autoscaleSettings",
+    "category": {
+      "localizedValue": "Autoscale",
+      "value": "Autoscale"
+    },
+    "claims": {
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn": "Microsoft.Insights/autoscaleSettings"
+    },
+    "correlationId": "0aa74a15-dfe1-4b33-9565-0ae3296912fe",
+    "description": "The autoscale engine attempting to scale resource '/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop' from 2 instances count to 3 instances count.",
+    "eventDataId": "1d8f6a9b-2586-fadc-f583-8081e9c017fb",
+    "eventName": {
+      "localizedValue": "Autoscale a resource.",
+      "value": "AutoscaleAction"
+    },
+    "eventTimestamp": "2026-11-24T18:59:47.5093046Z",
+    "id": "/SUBSCRIPTIONS/8176B01F-33D9-4775-83AD-A5EC8767B1AB/RESOURCEGROUPS/RG-CARIBESHOP-GMB25/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CARIBESHOP/events/1d8f6a9b-2586-fadc-f583-8081e9c017fb/ticks/639311435875093046",
+    "level": "Informational",
+    "operationId": "f0d336fa-3079-403e-9973-f37b6f1c0731",
+    "operationName": {
+      "localizedValue": "Autoscale scale up initiated",
+      "value": "Microsoft.Insights/AutoscaleSettings/Scaleup/Action"
+    },
+    "properties": {
+      "ActiveAutoscaleProfile": "{\r\n  \"Name\": \"cpu-hysteresis\",\r\n  \"Capacity\": {\r\n    \"Minimum\": \"2\",\r\n    \"Maximum\": \"3\",\r\n    \"Default\": \"2\"\r\n  },\r\n  \"Rules\": [\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"Microsoft.Compute/virtualMachineScaleSets\",\r\n        \"Resource\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"ResourceLocation\": \"chilecentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT5M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"GreaterThan\",\r\n        \"Threshold\": 35.0,\r\n        \"Source\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Increase\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT5M\"\r\n      }\r\n    },\r\n    {\r\n      \"MetricTrigger\": {\r\n        \"Name\": \"Percentage CPU\",\r\n        \"Namespace\": \"Microsoft.Compute/virtualMachineScaleSets\",\r\n        \"Resource\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"ResourceLocation\": \"chilecentral\",\r\n        \"TimeGrain\": \"PT1M\",\r\n        \"Statistic\": \"Average\",\r\n        \"TimeWindow\": \"PT10M\",\r\n        \"TimeAggregation\": \"Average\",\r\n        \"Operator\": \"LessThan\",\r\n        \"Threshold\": 15.0,\r\n        \"Source\": \"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\r\n        \"MetricType\": \"MDM\",\r\n        \"Dimensions\": [],\r\n        \"DividePerInstance\": false\r\n      },\r\n      \"ScaleAction\": {\r\n        \"Direction\": \"Decrease\",\r\n        \"Type\": \"ChangeCount\",\r\n        \"Value\": \"1\",\r\n        \"Cooldown\": \"PT10M\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Description": "The autoscale engine attempting to scale resource '/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop' from 2 instances count to 3 instances count.",
+      "LastScaleActionTime": "Tue, 24 Nov 2026 18:59:46 GMT",
+      "NewInstancesCount": "3",
+      "OldInstancesCount": "2",
+      "ResourceName": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop",
+      "eventName": "AutoscaleAction",
+      "operationId": "f0d336fa-3079-403e-9973-f37b6f1c0731"
+    },
+    "resourceGroup": "RG-CARIBESHOP-GMB25",
+    "resourceGroupName": "RG-CARIBESHOP-GMB25",
+    "resourceId": "/SUBSCRIPTIONS/8176B01F-33D9-4775-83AD-A5EC8767B1AB/RESOURCEGROUPS/RG-CARIBESHOP-GMB25/PROVIDERS/MICROSOFT.INSIGHTS/AUTOSCALESETTINGS/AUTOSCALE-CARIBESHOP",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "MICROSOFT.INSIGHTS"
+    },
+    "resourceType": {
+      "localizedValue": "MICROSOFT.INSIGHTS/autoscalesettings",
+      "value": "MICROSOFT.INSIGHTS/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T18:59:47.5093046Z",
+    "subscriptionId": "8176B01F-33D9-4775-83AD-A5EC8767B1AB",
+    "tenantId": ""
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoScaleSettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAMi990XrO78becvDaFrJH0a1EFA/hix7JoPyW2GPclN76fQIWB2rnyLl/I06ytRSNNKSP1LIOZNF2oms2Ve+ZYHeUJpvyj5Tg9RWwLN29LvQ4M6VBVUrs6sL1zm3CBapK08BxPE18+SUxLZB9O2CpX8UgpQO0uXxoVTqqYLNlYd2FkRdOSrwzZIWN8gX4JZJJ",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795549636",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795545191",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795545191",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qlpMRNa8ekSB27WXmdRjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "FaSHfkfT4mjshE_IzRv-q0Xf19qQ61X8Qwce5wqWUnABdXNlYXN0LWRzbXM",
+      "xms_idrel": "12 1",
+      "xms_sub_fct": "3 8",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "306d46fb-5edf-691c-21c6-e67fba190598",
+    "description": "",
+    "eventDataId": "8f59c929-5267-481a-9f8f-20f8dcbc68db",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:51:32.74277Z",
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop/events/8f59c929-5267-481a-9f8f-20f8dcbc68db/ticks/639311430927427700",
+    "level": "Informational",
+    "operationId": "a7f05c7c-c7b5-41a2-bea2-186e88220f97",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoScaleSettings",
+      "value": "Microsoft.Insights/autoScaleSettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T18:52:28Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoscalesettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAP04ce5gci/S5cf20FI1IePXLRmIg95D8Q0f7o9AdWU1F7IZ87NDD5/iCjWpnhMFmCCDLqBF8PNCA9tkpqu3Rxudaom2fKwGCpDF1uck2zDit6cvTeLdheDsiVXo1g8d1P98eSRCDa1q/cJZA4pNudvKnzcsNWKJ7vPmTJgATYKXAVGXaE2afZP6HPZU5w80q",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1795547464",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795542333",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795542333",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qXrMUH12zUixb1Jk-fRCAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "4liq1MXXSbeTknndQlAkDp-lwKlH76EAr9aetXWdIKQBdXNzb3V0aC1kc21z",
+      "xms_idrel": "10 1",
+      "xms_sub_fct": "3 4",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "f7705d00-540d-4291-b329-3f7e80571009",
+    "description": "",
+    "eventDataId": "88e57788-e810-4162-b5c7-ac6bc586884f",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:45:42.0086515Z",
+    "httpRequest": {
+      "clientIpAddress": "135.237.130.237",
+      "clientRequestId": "3b9382f0-e837-11f1-bd50-7c1e52f62dd8",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop?api-version=2022-10-01"
+    },
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop/events/88e57788-e810-4162-b5c7-ac6bc586884f/ticks/639311427420086515",
+    "level": "Informational",
+    "operationId": "f7705d00-540d-4291-b329-3f7e80571009",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoscalesettings/write",
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoscalesettings",
+      "value": "Microsoft.Insights/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2026-11-24T18:46:44Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoscalesettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAP04ce5gci/S5cf20FI1IePXLRmIg95D8Q0f7o9AdWU1F7IZ87NDD5/iCjWpnhMFmCCDLqBF8PNCA9tkpqu3Rxudaom2fKwGCpDF1uck2zDit6cvTeLdheDsiVXo1g8d1P98eSRCDa1q/cJZA4pNudvKnzcsNWKJ7vPmTJgATYKXAVGXaE2afZP6HPZU5w80q",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1795547464",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795542333",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795542333",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qXrMUH12zUixb1Jk-fRCAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "4liq1MXXSbeTknndQlAkDp-lwKlH76EAr9aetXWdIKQBdXNzb3V0aC1kc21z",
+      "xms_idrel": "10 1",
+      "xms_sub_fct": "3 4",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "f7705d00-540d-4291-b329-3f7e80571009",
+    "description": "",
+    "eventDataId": "3d19a55a-4799-4d24-bc77-0a7b1da66a61",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:45:35.7586547Z",
+    "httpRequest": {
+      "clientIpAddress": "135.237.130.237",
+      "clientRequestId": "3b9382f0-e837-11f1-bd50-7c1e52f62dd8",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop?api-version=2022-10-01"
+    },
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop/events/3d19a55a-4799-4d24-bc77-0a7b1da66a61/ticks/639311427357586547",
+    "level": "Informational",
+    "operationId": "f7705d00-540d-4291-b329-3f7e80571009",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoscalesettings/write",
+      "requestbody": "{\"location\":\"chilecentral\",\"properties\":{\"enabled\":true,\"name\":\"autoscale-caribeshop\",\"notifications\":[{\"email\":{\"customEmails\":[\"alsanchez@utb.edu.co\"],\"sendToSubscriptionAdministrator\":false,\"sendToSubscriptionCoAdministrators\":false},\"operation\":\"Scale\",\"webhooks\":[]}],\"predictiveAutoscalePolicy\":{\"scaleMode\":\"Disabled\"},\"profiles\":[{\"capacity\":{\"default\":\"2\",\"maximum\":\"3\",\"minimum\":\"2\"},\"name\":\"cpu-hysteresis\",\"rules\":[{\"metricTrigger\":{\"dimensions\":[],\"dividePerInstance\":false,\"metricName\":\"Percentage CPU\",\"metricNamespace\":\"Microsoft.Compute/virtualMachineScaleSets\",\"metricResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\"operator\":\"GreaterThan\",\"statistic\":\"Average\",\"threshold\":35.0,\"timeAggregation\":\"Average\",\"timeGrain\":\"PT1M\",\"timeWindow\":\"PT5M\"},\"scaleAction\":{\"cooldown\":\"PT5M\",\"direction\":\"Increase\",\"type\":\"ChangeCount\",\"value\":\"1\"}},{\"metricTrigger\":{\"dimensions\":[],\"dividePerInstance\":false,\"metricName\":\"Percentage CPU\",\"metricNamespace\":\"Microsoft.Compute/virtualMachineScaleSets\",\"metricResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\"operator\":\"LessThan\",\"statistic\":\"Average\",\"threshold\":15.0,\"timeAggregation\":\"Average\",\"timeGrain\":\"PT1M\",\"timeWindow\":\"PT10M\"},\"scaleAction\":{\"cooldown\":\"PT10M\",\"direction\":\"Decrease\",\"type\":\"ChangeCount\",\"value\":\"1\"}}]}],\"targetResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\"},\"tags\":{\"environment\":\"lab\",\"managed_by\":\"Terraform\",\"project\":\"CaribeShop\",\"workshop\":\"seguridad-escalamiento-alta-disponibilidad\"}}"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoscalesettings",
+      "value": "Microsoft.Insights/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T18:46:44Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoScaleSettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAMi990XrO78becvDaFrJH0a1EFA/hix7JoPyW2GPclN76fQIWB2rnyLl/I06ytRSNNKSP1LIOZNF2oms2Ve+ZYHeUJpvyj5Tg9RWwLN29LvQ4M6VBVUrs6sL1zm3CBapK08BxPE18+SUxLZB9O2CpX8UgpQO0uXxoVTqqYLNlYd2FkRdOSrwzZIWN8gX4JZJJ",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795549636",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795545191",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795545191",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qlpMRNa8ekSB27WXmdRjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "FaSHfkfT4mjshE_IzRv-q0Xf19qQ61X8Qwce5wqWUnABdXNlYXN0LWRzbXM",
+      "xms_idrel": "12 1",
+      "xms_sub_fct": "3 8",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "306d46fb-5edf-691c-21c6-e67fba190598",
+    "description": "",
+    "eventDataId": "f9dce5a3-88b8-4b72-b222-d6189360f9cf",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:41:35.1808412Z",
+    "httpRequest": {
+      "clientIpAddress": "135.237.130.237",
+      "clientRequestId": "",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop?api-version=2022-10-01"
+    },
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop/events/f9dce5a3-88b8-4b72-b222-d6189360f9cf/ticks/639311424951808412",
+    "level": "Informational",
+    "operationId": "f030cf01-c837-42f4-b04a-f2af940ef0f8",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoScaleSettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoScaleSettings/write",
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoScaleSettings",
+      "value": "Microsoft.Insights/autoScaleSettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2026-11-24T18:43:13Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoScaleSettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAMi990XrO78becvDaFrJH0a1EFA/hix7JoPyW2GPclN76fQIWB2rnyLl/I06ytRSNNKSP1LIOZNF2oms2Ve+ZYHeUJpvyj5Tg9RWwLN29LvQ4M6VBVUrs6sL1zm3CBapK08BxPE18+SUxLZB9O2CpX8UgpQO0uXxoVTqqYLNlYd2FkRdOSrwzZIWN8gX4JZJJ",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.azure.com",
+      "exp": "1795549636",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795545191",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795545191",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qlpMRNa8ekSB27WXmdRjAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "FaSHfkfT4mjshE_IzRv-q0Xf19qQ61X8Qwce5wqWUnABdXNlYXN0LWRzbXM",
+      "xms_idrel": "12 1",
+      "xms_sub_fct": "3 8",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "306d46fb-5edf-691c-21c6-e67fba190598",
+    "description": "",
+    "eventDataId": "7d3998fe-146b-49b4-b540-ecf0df78f024",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:41:28.91521Z",
+    "httpRequest": {
+      "clientIpAddress": "135.237.130.237",
+      "clientRequestId": "",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop?api-version=2022-10-01"
+    },
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop/events/7d3998fe-146b-49b4-b540-ecf0df78f024/ticks/639311424889152100",
+    "level": "Informational",
+    "operationId": "f030cf01-c837-42f4-b04a-f2af940ef0f8",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoScaleSettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoScaleSettings/write",
+      "requestbody": "{\"location\":\"chilecentral\",\"properties\":{\"enabled\":true,\"notifications\":[{\"email\":{\"customEmails\":[\"alsanchez@utb.edu.co\"],\"sendToSubscriptionAdministrator\":false,\"sendToSubscriptionCoAdministrators\":false},\"operation\":\"scale\",\"webhooks\":[]}],\"profiles\":[{\"capacity\":{\"default\":\"2\",\"maximum\":\"3\",\"minimum\":\"2\"},\"name\":\"cpu-hysteresis\",\"rules\":[{\"metricTrigger\":{\"dimensions\":[],\"dividePerInstance\":false,\"metricName\":\"Percentage CPU\",\"metricNamespace\":\"Microsoft.Compute/virtualMachineScaleSets\",\"metricResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\"operator\":\"GreaterThan\",\"statistic\":\"Average\",\"threshold\":35,\"timeAggregation\":\"Average\",\"timeGrain\":\"PT1M\",\"timeWindow\":\"PT5M\"},\"scaleAction\":{\"cooldown\":\"PT5M\",\"direction\":\"Increase\",\"type\":\"ChangeCount\",\"value\":\"1\"}},{\"metricTrigger\":{\"dimensions\":[],\"dividePerInstance\":false,\"metricName\":\"Percentage CPU\",\"metricNamespace\":\"Microsoft.Compute/virtualMachineScaleSets\",\"metricResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\"operator\":\"LessThan\",\"statistic\":\"Average\",\"threshold\":15,\"timeAggregation\":\"Average\",\"timeGrain\":\"PT1M\",\"timeWindow\":\"PT10M\"},\"scaleAction\":{\"cooldown\":\"PT10M\",\"direction\":\"Decrease\",\"type\":\"ChangeCount\",\"value\":\"1\"}}]}],\"targetResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\"},\"tags\":{\"environment\":\"lab\",\"managed_by\":\"Terraform\",\"project\":\"CaribeShop\",\"workshop\":\"seguridad-escalamiento-alta-disponibilidad\"}}"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoScaleSettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoScaleSettings",
+      "value": "Microsoft.Insights/autoScaleSettings"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T18:43:13Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoscalesettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAP04ce5gci/S5cf20FI1IePXLRmIg95D8Q0f7o9AdWU1F7IZ87NDD5/iCjWpnhMFmCCDLqBF8PNCA9tkpqu3Rxudaom2fKwGCpDF1uck2zDit6cvTeLdheDsiVXo1g8d1P98eSRCDa1q/cJZA4pNudvKnzcsNWKJ7vPmTJgATYKXAVGXaE2afZP6HPZU5w80q",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1795547464",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795542333",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795542333",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qXrMUH12zUixb1Jk-fRCAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "4liq1MXXSbeTknndQlAkDp-lwKlH76EAr9aetXWdIKQBdXNzb3V0aC1kc21z",
+      "xms_idrel": "10 1",
+      "xms_sub_fct": "3 4",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "9bcffa8d-c49e-429a-a2c4-ef4118416d8d",
+    "description": "",
+    "eventDataId": "32fb5cd5-f633-4d45-a82f-c897c13c612a",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:10:55.0567221Z",
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop/events/32fb5cd5-f633-4d45-a82f-c897c13c612a/ticks/639311406550567221",
+    "level": "Informational",
+    "operationId": "1fc10f43-b025-40cb-a61a-3f942bf3bf71",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoscalesettings",
+      "value": "Microsoft.Insights/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T18:11:59Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoscalesettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAP04ce5gci/S5cf20FI1IePXLRmIg95D8Q0f7o9AdWU1F7IZ87NDD5/iCjWpnhMFmCCDLqBF8PNCA9tkpqu3Rxudaom2fKwGCpDF1uck2zDit6cvTeLdheDsiVXo1g8d1P98eSRCDa1q/cJZA4pNudvKnzcsNWKJ7vPmTJgATYKXAVGXaE2afZP6HPZU5w80q",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1795547464",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795542333",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795542333",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qXrMUH12zUixb1Jk-fRCAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "4liq1MXXSbeTknndQlAkDp-lwKlH76EAr9aetXWdIKQBdXNzb3V0aC1kc21z",
+      "xms_idrel": "10 1",
+      "xms_sub_fct": "3 4",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "9bcffa8d-c49e-429a-a2c4-ef4118416d8d",
+    "description": "",
+    "eventDataId": "f0e34d64-ce01-45d3-a586-a91148a0a42a",
+    "eventName": {
+      "localizedValue": "End request",
+      "value": "EndRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:01:00.1303398Z",
+    "httpRequest": {
+      "clientIpAddress": "135.237.130.237",
+      "clientRequestId": "fc971720-e830-11f1-9f2d-7c1e52f62dd8",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop?api-version=2022-10-01"
+    },
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop/events/f0e34d64-ce01-45d3-a586-a91148a0a42a/ticks/639311400601303398",
+    "level": "Informational",
+    "operationId": "9bcffa8d-c49e-429a-a2c4-ef4118416d8d",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoscalesettings/write",
+      "statusCode": "OK"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoscalesettings",
+      "value": "Microsoft.Insights/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Succeeded",
+      "value": "Succeeded"
+    },
+    "subStatus": {
+      "localizedValue": "OK (HTTP Status Code: 200)",
+      "value": "OK"
+    },
+    "submissionTimestamp": "2026-11-24T18:02:55Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  },
+  {
+    "authorization": {
+      "action": "Microsoft.Insights/autoscalesettings/write",
+      "scope": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop"
+    },
+    "caller": "alsanchez@utb.edu.co",
+    "category": {
+      "localizedValue": "Administrative",
+      "value": "Administrative"
+    },
+    "claims": {
+      "acrs": "p1,urn:user:registersecurityinfo",
+      "aio": "AZQAa/8eAAAAP04ce5gci/S5cf20FI1IePXLRmIg95D8Q0f7o9AdWU1F7IZ87NDD5/iCjWpnhMFmCCDLqBF8PNCA9tkpqu3Rxudaom2fKwGCpDF1uck2zDit6cvTeLdheDsiVXo1g8d1P98eSRCDa1q/cJZA4pNudvKnzcsNWKJ7vPmTJgATYKXAVGXaE2afZP6HPZU5w80q",
+      "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "appidacr": "0",
+      "aud": "https://management.core.windows.net/",
+      "exp": "1795547464",
+      "groups": "114d2040-4b5e-4117-bd3f-5a6260183076,f4e95858-afed-4f55-ac2f-6ee61de7a689,190fe8fa-6475-43ce-9e47-405f89a9fb04,4d22e819-0f97-4e12-bf2b-53d20fd5626c,e3a64720-b438-42b5-8b7e-2df48b669c7d,5d7fa823-1402-4809-afdb-16f9472a578b,13961815-dbfd-4a17-a1cc-13be691d407a,2eeac305-d776-4d72-a2e7-d876ea69826b,b5a37f74-fb1b-448b-8063-0b0a8a05e5c3,0b87f088-f184-4307-878b-c3116841d4f2,2b690ffc-a6b4-4a20-b668-bbda0bb49be4,28cdfe26-ce28-4931-830e-8bf3d8c71556,708140c6-3db8-4fbe-8b5c-ab960a857ac3,a1b40582-07f4-47f0-b2b8-33854087c624,ca81f41c-90b2-4183-a5f0-c24cc3d665e5,85b7058a-9283-439a-a1fc-79c36e601bc5",
+      "http://schemas.microsoft.com/claims/authnclassreference": "1",
+      "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+      "http://schemas.microsoft.com/identity/claims/objectidentifier": "27bde1c0-9602-4e9a-a020-d3cf94dc38ff",
+      "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+      "http://schemas.microsoft.com/identity/claims/tenantid": "ea649e50-27d2-4318-9cb9-2fcffe16fd41",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Alejandro David",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "alsanchez@utb.edu.co",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "MvQmMJ5qdVf5YhQapd9Eu0ejB27Ro6UpgQ-_S-ryBmU",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Sanchez Diaz",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "alsanchez@utb.edu.co",
+      "iat": "1795542333",
+      "idtyp": "user",
+      "ipaddr": "135.237.130.237",
+      "iss": "https://sts.windows.net/ea649e50-27d2-4318-9cb9-2fcffe16fd41/",
+      "name": "Alejandro David Sanchez Diaz",
+      "nbf": "1795542333",
+      "onprem_sid": "S-1-5-21-1875160959-3801935606-161467275-27979",
+      "puid": "10032001B496E63D",
+      "rh": "1.ATQAUJ5k6tInGEOcuS_P_hb9QUZIf3kAutdPukPawfj2MBMAAP40AA.",
+      "sid": "00ab8a2a-f082-4f9b-2b81-cbf1cc13161e",
+      "uti": "qXrMUH12zUixb1Jk-fRCAA",
+      "ver": "1.0",
+      "wids": "b79fbf4d-3ef9-4689-8143-76b194e85509",
+      "xms_act_fct": "5 3",
+      "xms_aud_guid": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "xms_ftd": "4liq1MXXSbeTknndQlAkDp-lwKlH76EAr9aetXWdIKQBdXNzb3V0aC1kc21z",
+      "xms_idrel": "10 1",
+      "xms_sub_fct": "3 4",
+      "xms_tcdt": "1378746733"
+    },
+    "correlationId": "9bcffa8d-c49e-429a-a2c4-ef4118416d8d",
+    "description": "",
+    "eventDataId": "c7e4648a-5b56-4b05-8f32-3bfb40630ba4",
+    "eventName": {
+      "localizedValue": "Begin request",
+      "value": "BeginRequest"
+    },
+    "eventTimestamp": "2026-11-24T18:00:52.9115804Z",
+    "httpRequest": {
+      "clientIpAddress": "135.237.130.237",
+      "clientRequestId": "fc971720-e830-11f1-9f2d-7c1e52f62dd8",
+      "method": "PUT",
+      "uri": "https://management.azure.com/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop?api-version=2022-10-01"
+    },
+    "id": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop/events/c7e4648a-5b56-4b05-8f32-3bfb40630ba4/ticks/639311400529115804",
+    "level": "Informational",
+    "operationId": "9bcffa8d-c49e-429a-a2c4-ef4118416d8d",
+    "operationName": {
+      "localizedValue": "Update autoscale setting",
+      "value": "Microsoft.Insights/autoscalesettings/write"
+    },
+    "properties": {
+      "entity": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+      "eventCategory": "Administrative",
+      "hierarchy": "ea649e50-27d2-4318-9cb9-2fcffe16fd41/8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+      "message": "Microsoft.Insights/autoscalesettings/write",
+      "requestbody": "{\"location\":\"chilecentral\",\"properties\":{\"enabled\":true,\"name\":\"autoscale-caribeshop\",\"notifications\":[{\"email\":{\"customEmails\":[\"alsanchez@utb.edu.co\"],\"sendToSubscriptionAdministrator\":false,\"sendToSubscriptionCoAdministrators\":false},\"operation\":\"Scale\",\"webhooks\":[]}],\"predictiveAutoscalePolicy\":{\"scaleMode\":\"Disabled\"},\"profiles\":[{\"capacity\":{\"default\":\"2\",\"maximum\":\"3\",\"minimum\":\"2\"},\"name\":\"cpu-hysteresis\",\"rules\":[{\"metricTrigger\":{\"dimensions\":[],\"dividePerInstance\":false,\"metricName\":\"Percentage CPU\",\"metricNamespace\":\"Microsoft.Compute/virtualMachineScaleSets\",\"metricResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\"operator\":\"GreaterThan\",\"statistic\":\"Average\",\"threshold\":70.0,\"timeAggregation\":\"Average\",\"timeGrain\":\"PT1M\",\"timeWindow\":\"PT5M\"},\"scaleAction\":{\"cooldown\":\"PT5M\",\"direction\":\"Increase\",\"type\":\"ChangeCount\",\"value\":\"1\"}},{\"metricTrigger\":{\"dimensions\":[],\"dividePerInstance\":false,\"metricName\":\"Percentage CPU\",\"metricNamespace\":\"Microsoft.Compute/virtualMachineScaleSets\",\"metricResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\",\"operator\":\"LessThan\",\"statistic\":\"Average\",\"threshold\":30.0,\"timeAggregation\":\"Average\",\"timeGrain\":\"PT1M\",\"timeWindow\":\"PT10M\"},\"scaleAction\":{\"cooldown\":\"PT10M\",\"direction\":\"Decrease\",\"type\":\"ChangeCount\",\"value\":\"1\"}}]}],\"targetResourceUri\":\"/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourceGroups/rg-caribeshop-gmb25/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-caribeshop\"},\"tags\":{\"environment\":\"lab\",\"managed_by\":\"Terraform\",\"project\":\"CaribeShop\",\"workshop\":\"seguridad-escalamiento-alta-disponibilidad\"}}"
+    },
+    "resourceGroup": "rg-caribeshop-gmb25",
+    "resourceGroupName": "rg-caribeshop-gmb25",
+    "resourceId": "/subscriptions/8176b01f-33d9-4775-83ad-a5ec8767b1ab/resourcegroups/rg-caribeshop-gmb25/providers/Microsoft.Insights/autoscalesettings/autoscale-caribeshop",
+    "resourceProviderName": {
+      "localizedValue": "Microsoft Insights",
+      "value": "Microsoft.Insights"
+    },
+    "resourceType": {
+      "localizedValue": "Microsoft.Insights/autoscalesettings",
+      "value": "Microsoft.Insights/autoscalesettings"
+    },
+    "status": {
+      "localizedValue": "Started",
+      "value": "Started"
+    },
+    "subStatus": {
+      "localizedValue": "",
+      "value": ""
+    },
+    "submissionTimestamp": "2026-11-24T18:01:46Z",
+    "subscriptionId": "8176b01f-33d9-4775-83ad-a5ec8767b1ab",
+    "tenantId": "ea649e50-27d2-4318-9cb9-2fcffe16fd41"
+  }
+]
