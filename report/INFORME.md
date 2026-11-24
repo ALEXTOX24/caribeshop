@@ -187,30 +187,29 @@ Además, la consulta KQL de S6 devolvió 20 registros `SecretGet` del Key Vault 
 
 ## 9. Estimación de costo mensual
 
-El precio real debe exportarse de **Azure Pricing Calculator** para `Standard_B2ls_v2` (Linux) en `chilecentral`. Sea **P** el precio por hora de una instancia:
-
-### Compute
-
-- mínimo 2 instancias 24×7: `2 × 730 h × P` USD/mes;
-- fijo en 3 instancias 24×7 (máximo permitido): `3 × 730 h × P` USD/mes;
-- escenario autoscale ilustrativo: 20 h/día con 2 instancias + 4 h/día con 3 → promedio 2,17 instancias → `2,17 × 730 h × P` USD/mes;
-- ahorro de ese escenario frente a mantener 3 fijas: `≈ 27,8 %` en compute.
-
-Agregar desde Azure Pricing Calculator:
+Cotización exportada de **Azure Pricing Calculator** el 24/11/2026 (precios de pago por uso en USD, región `chilecentral`). Archivo: `report/Cotizacion_Azure_CaribeShop.xlsx`.
 
 | Componente | Configuración | USD/mes |
 |---|---|---:|
-| VMSS compute | B2ls_v2, promedio 2,17 instancias | [ ] |
-| OS disks | Premium_LRS por instancia | [ ] |
-| Standard Load Balancer | reglas + data processed | [ ] |
-| Standard Public IP | 1 | [ ] |
-| Key Vault | operaciones de secretos | [ ] |
-| Log Analytics | GB ingeridos/retención | [ ] |
-| Backend state Storage | ZRS, pocos MB | [ ] |
-| Egress de datos | según tráfico | [ ] |
-| **Total** | | **[ ]** |
+| VMSS compute + OS disks | 2 × `B2ls v2` Linux × 730 h + 2 discos Premium SSD P4 | 98,45 |
+| Standard Load Balancer | 1 regla + 50 GB procesados | 18,50 |
+| Standard Public IP | 1 IP estática × 730 h | 3,65 |
+| Key Vault | 100 000 operaciones de secretos | 0,30 |
+| Log Analytics (Azure Monitor) | 0,2 GB/día de registros de análisis, 31 días de retención | 3,21 |
+| Backend state Storage | Blob en bloques, GPv2, ZRS, 1 GB | 1,84 |
+| Egress de datos | 50 GB a Internet (dentro del volumen gratuito) | 0,00 |
+| **Total (base de 2 instancias)** | | **125,95** |
 
-El ahorro principal proviene de mantener dos instancias como base y aumentar la capacidad solo cuando las métricas activan el autoscale.
+### Compute
+
+Precio de `B2ls v2` Linux en `chilecentral`: **0,058 USD/hora** por instancia.
+
+- mínimo 2 instancias 24×7: `2 × 730 h × 0,058 ≈ 84,68 USD/mes`;
+- fijo en 3 instancias 24×7 (máximo permitido): `3 × 730 h × 0,058 ≈ 127,02 USD/mes`;
+- escenario autoscale ilustrativo: 20 h/día con 2 instancias + 4 h/día con 3 → promedio 2,17 instancias → `≈ 91,74 USD/mes`;
+- ahorro de ese escenario frente a mantener 3 fijas: `≈ 27,8 %` en compute (≈ 35,28 USD/mes).
+
+El ahorro principal proviene de mantener dos instancias como base y aumentar la capacidad solo cuando las métricas activan el autoscale. El cómputo y sus discos representan ~78 % del costo total, por lo que la capacidad mínima es la palanca de costo más importante.
 
 ## 10. Respuestas de análisis
 
