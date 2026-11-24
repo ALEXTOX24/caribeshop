@@ -85,7 +85,7 @@ resource "azurerm_monitor_metric_alert" "high_cpu" {
   name                = "alert-${var.prefix}-high-cpu"
   resource_group_name = azurerm_resource_group.main.name
   scopes              = [azurerm_linux_virtual_machine_scale_set.app.id]
-  description         = "CPU promedio del VMSS mayor a 80 % durante 5 minutos."
+  description         = "CPU promedio del VMSS mayor a 40 % durante 5 minutos (80 % de la CPU utilizable por la app; ver INFORME 2.2)."
   severity            = 2
   frequency           = "PT1M"
   window_size         = "PT5M"
