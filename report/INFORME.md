@@ -4,7 +4,6 @@
 **Integrantes:** Alejandro Sánchez, Laura Torres, María Ahumada, María Serna  
 **Fecha:** 24/11/2026  
 **Repositorio:** https://github.com/ALEXTOX24/caribeshop  
-**Video:** [ENLACE YOUTUBE]
 
 ## 1. Resumen ejecutivo
 
